@@ -72,6 +72,7 @@ async function run() {
             res.send(result);
         });
 
+
         app.get('/categories', async (req, res) => {
             const query = {};
             const categories = await categoriesCollection.find(query).toArray();
